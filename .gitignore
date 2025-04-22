@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+.qodo
+*.pt
+Gender_cls/
+assets/*
+prepro_data
+output/
