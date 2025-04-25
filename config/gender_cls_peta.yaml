@@ -3,7 +3,7 @@ mode: train  # (str) YOLO mode, i.e. train, val, predict, export, track, benchma
 
 # Train settings -------------------------------------------------------------------------------------------------------
 model: yolov8m-cls.pt # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
-data: prepro_peta
+data: prepro_data/prepro_peta
 project: Gender_cls # (str, optional) project name
 name: artifacts # (str, optional) experiment name, results saved to 'project/name' directory
 epochs: 300  # (int) number of epochs to train for
