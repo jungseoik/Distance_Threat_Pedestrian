@@ -84,7 +84,29 @@ model.process_video("assets/threat_1.mp4")
 
 ## 3. 성별 분류기 학습 (`train.py`)
 
-학습은 YOLO 분류기 형식으로 진행됩니다.
+기존 README.md에 데이터셋 전처리 내용을 추가할 수 있는 섹션을 제안드립니다. "사용 방법" 섹션 아래, "성별 분류기 학습" 위치에 다음 내용을 추가하시면 좋을 것 같습니다:
+
+## 📊 데이터셋 전처리
+
+### 전처리 스크립트 사용
+
+프로젝트에 포함된 전처리 스크립트를 사용하여 AI Hub와 PETA 데이터셋을 학습에 적합한 형식으로 변환할 수 있습니다.
+
+```bash
+# 모든 데이터셋 전처리
+python preprocess.py
+
+# 특정 데이터셋만 처리
+python preprocess.py -d aihub  # AI Hub 데이터셋만 처리 
+python preprocess.py -d peta   # PETA 데이터셋만 처리
+```
+
+### 지원 데이터셋
+
+1. **AI Hub 데이터셋**: XML 형식의 라벨 파일에서 성별 정보를 추출하여 분류합니다.
+2. **PETA 데이터셋**: 텍스트 기반 라벨 파일에서 성별 태그를 추출하여 분류합니다.
+
+학습은 YOLO 형식으로 진행됩니다.
 
 ```python
 # train.py
@@ -93,6 +115,7 @@ from ultralytics import YOLO
 model = YOLO("Gender_cls/ai_hub2/weights/last.pt")
 model.train(cfg="config/gender_cls_aihub.yaml")
 ```
+
 
 ### 학습 실행법
 
@@ -126,7 +149,7 @@ workers: 8
 
 ---
 
-## 구성된 주요 모듈
+## 주요 모듈
 
 | 모듈명 | 설명 |
 |--------|------|
@@ -135,7 +158,7 @@ workers: 8
 | `ThreatAnalyzer` | 사람 간 거리 계산 및 위협 시각화 |
 | `ThreatVideoDiscriminator` | 위 세 기능을 통합한 추론 파이프라인 |
 | `app.py` | Streamlit 기반 웹 분석 UI |
-| `train.py` | 성별 분류기 학습 코드 |
+| `train.py` | 성별 분류기 학습 |
 
 ---
 
