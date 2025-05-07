@@ -1,0 +1,9 @@
+path: /home/piawsa6000/nas192/tmp/jsi/Open_Image_Datasets
+
+train: images/train  
+val: images/validation  
+test: images/test
+
+names:
+  322: man
+  594: woman

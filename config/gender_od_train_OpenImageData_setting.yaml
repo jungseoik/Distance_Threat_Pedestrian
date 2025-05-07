@@ -1,0 +1,10 @@
+# gender_od_train_OpenImageData_setting.yaml
+path: /home/piawsa6000/OpenImageDatasets
+
+train: images/train
+val: images/validation
+test: images/test
+
+names:
+  0: man
+  1: woman

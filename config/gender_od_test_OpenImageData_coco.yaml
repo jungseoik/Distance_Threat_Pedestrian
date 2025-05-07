@@ -1,0 +1,8 @@
+path: /home/piawsa6000/nas192/tmp/jsi/Open_Image_Datasets
+
+train: images/train  # dummy
+val: images/validation  # dummy
+test: images/test
+
+names:
+  0: person

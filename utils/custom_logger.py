@@ -74,5 +74,5 @@ def custom_logger(name: str) -> logging.Logger:
     # 핸들러 추가
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)
-
+    
     return logger
