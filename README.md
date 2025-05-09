@@ -84,9 +84,19 @@ model.process_video("assets/threat_1.mp4")
 
 ## 3. 성별 분류기 학습 (`train.py`)
 
-기존 README.md에 데이터셋 전처리 내용을 추가할 수 있는 섹션을 제안드립니다. "사용 방법" 섹션 아래, "성별 분류기 학습" 위치에 다음 내용을 추가하시면 좋을 것 같습니다:
 
 ## 데이터셋 전처리
+
+### 데이터 자동 다운로드 및 압축 해제
+
+사전에 준비된 PETA 데이터셋을 다운로드하고, `assets/` 디렉토리에 자동으로 압축을 해제합니다.
+
+```bash
+bash download_and_preprocess.sh
+
+# 전처리 스크립트 실행 (루트 경로에서, peta만 진행할 경우 아래 생략)
+python -m preprocess.preprocess_peta
+```
 
 ### 전처리 스크립트 사용
 

@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from ultralytics import YOLO
 from scipy.spatial.distance import cdist
-from utils.prepro import preprocess_v2, LetterBox, load_model
+from utils.prepro import preprocess_v2, load_model
 import config
 
 class PersonDetector:

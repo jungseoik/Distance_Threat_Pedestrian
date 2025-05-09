@@ -17,7 +17,7 @@ CLS_MODEL_NAME = "PersonGenderCls_v3.2.0.pt"
 AIHUB_DATASET_ROOT = "/home/piawsa6000/nas192/tmp/jsi/015.한국인재식별이미지/01.데이터"
 AIHUB_OUTPUT_DIR = "prepro_data/prepro_aihub"
 
-PETA_DATASET_ROOT = "/home/piawsa6000/nas192/tmp/jsi/PETA dataset"
+PETA_DATASET_ROOT = "assets/PETA dataset"
 PETA_OUTPUT_DIR = "prepro_data/prepro_peta"
 VALID_EXT = {".png", ".jpg", ".jpeg", ".bmp"}
 

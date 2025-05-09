@@ -181,3 +181,5 @@ output/
 logs/
 jy.py
 Gender_od
+*.zip
+KTT_Yonsei-Common-AI-python_fastAPI_seoik

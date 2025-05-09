@@ -253,3 +253,6 @@ def process_peta_dataset(debug=True):
     logger.info("\n✅ 전처리 완료! YOLOv8 학습 준비 완료.")
     
     return dataset_stats
+
+if __name__ == "__main__":
+    process_peta_dataset()
